@@ -1,0 +1,80 @@
+/* General app layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: max-content;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app-header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.app-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-main {
+    padding: 10px;
+  }
+
+  .app-footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Светлая тема */
+.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Тёмная тема */
+.dark {
+  --background-color: #1D1D1D;
+  --text-color: #ffffff;
+}
+
+/* Применение переменных */
+.app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}

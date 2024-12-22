@@ -1,0 +1,17 @@
+.header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.header-buttons button {
+    background-color: #c8eac8;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 5px;
+}
